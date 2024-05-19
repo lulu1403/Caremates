@@ -4,6 +4,7 @@ body {
     background-size: 2000% 2000%;
     background-position: 0%;
     font-family: 'Open Sans';
+    overflow: hidden;
 }
 
 @keyframes color {
@@ -32,10 +33,13 @@ nav {
     font-family: 'Open Sans', sans-serif;
     margin-top: 1%;
     padding: 0;
-    position: fixed; 
-    width: 100%; 
-    z-index: 1000;
+    position: fixed; /* Fixed position */
+    top: 0; /* Position at the top of the screen */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it is above other content */
+    overflow: hidden;
 }
+
 
 .container-fluid {
     width: 93%;
@@ -47,9 +51,6 @@ nav {
     border: 1px solid #ffffffc4;
 }
 
-/* .container-fluid .navbar-brand {
-    text-shadow: 0px 0px 24px -5px rgba(0, 0, 0, 0.25);
-} */
 
 .navbar-nav .nav-link.active {
     border-radius: 50px;
@@ -75,54 +76,56 @@ nav {
     gap: 25px;
 }
 
-.home {
-    margin-left: 3%;
-    margin-right: 3%;
-}
-
-.slideshow-container {
-    position: relative;
-    max-width: 70%;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.slide {
-    width: 100%;
-    height: auto;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.slide.active {
-    opacity: 1;
-}
-
-.icon {
+.container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    top: 500;
+    left: 100;
+    width: 88%; 
+    height: 88%;
+    margin-top: 0;
+    margin-left: 7%;
+    background: transparent;
 }
 
-.icon img {
-    width: 100%;
-    border-radius: 50%;
-    margin-top: 15px;
-    margin-bottom: 10px; 
+.search {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    margin-top: 0;
+    border-radius: 28px;
+    box-shadow: 0px 0px 10px 3px rgba(77, 150, 182, 0.30);
+    background: rgba(217, 217, 217, 0.30);
 }
 
-.button-daftar {
-    background-color: #4D96B6;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 10px 20px;
+
+.search-input {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    color: #333;
+    margin-right: 0;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding-right: 0;
+}
+
+input{
+    width: 680px;
+}
+
+
+section {
+    /* position: fixed; */
+    top: 500;
+    left: 100;
+    width: 88%; 
+    height: 88%;
+    margin-top: 3%;
+    margin-left: 7%;
     border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.button-daftar:hover {
-    background-color: #155d82;
+    background-color: transparent;
+    z-index: -1;
 }
