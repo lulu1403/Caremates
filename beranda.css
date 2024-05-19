@@ -73,6 +73,7 @@ nav {
 }
 
 .home {
+    height: 100%;
     margin-left: 3%;
     margin-right: 3%;
 }
@@ -89,6 +90,9 @@ nav {
     height: auto;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .slide.active {
