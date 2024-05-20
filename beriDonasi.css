@@ -93,7 +93,7 @@ nav {
     width: max-content;
     display: flex;
     align-items: center;
-    padding: 24px;
+    padding: 20px;
     margin-top: 0;
     border-radius: 28px;
     box-shadow: 0px 0px 10px 3px rgba(77, 150, 182, 0.30);
@@ -113,7 +113,7 @@ nav {
 }
 
 input{
-    width: 680px;
+    width: 600px;
 }
 
 
@@ -128,4 +128,10 @@ section {
     border-radius: 20px;
     background-color: transparent;
     z-index: -1;
+}
+
+.card-body {
+    padding-bottom: 0;
+    padding: 0;
+    margin-bottom: 0;
 }
