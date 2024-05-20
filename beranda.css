@@ -76,20 +76,23 @@ nav {
 }
 
 .home {
-    height: 100%;
     margin-left: 3%;
     margin-right: 3%;
 }
 
+.container1 {
+    height: 100vh;
+}
+
 .slideshow-container {
     position: relative;
-    max-width: 70%;
+    max-width: 80%;
     overflow: hidden;
     border-radius: 8px;
 }
 
 .slide {
-    width: 100%;
+    width: 80%;
     height: auto;
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -98,6 +101,9 @@ nav {
     left: 0;
 }
 
+.slide img {
+    width: 120%;
+}
 .slide.active {
     opacity: 1;
 }
@@ -125,6 +131,7 @@ nav {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-bottom: 1%;
 }
 
 .button-daftar:hover {

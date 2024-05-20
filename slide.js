@@ -3,15 +3,12 @@ function showSlides() {
     let slideIndex = 0;
 
     setInterval(function() {
-        // Sembunyikan semua slide
         slides.forEach(function(slide) {
-            slide.style.display = 'none';
+            slide.classList.remove('active');
         });
 
-        // Tampilkan slide berikutnya
-        slides[slideIndex].style.display = 'block';
+        slides[slideIndex].classList.add('active');
 
-        // Perbarui indeks slide untuk slide berikutnya
         slideIndex++;
         if (slideIndex >= slides.length) {
             slideIndex = 0; 
